@@ -1,0 +1,16 @@
+h1,h2{
+    text-align: center;
+}
+
+div > p{
+    text-align: right;
+}
+strong p{
+    text-align: justify;
+    
+}
+.second{
+    text-align: end;
+    color:green;
+    
+}

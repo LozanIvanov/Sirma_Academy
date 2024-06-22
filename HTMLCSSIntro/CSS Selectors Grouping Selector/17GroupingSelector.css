@@ -1,0 +1,9 @@
+h1, h2{
+    color:red;
+    font-family: cursive;
+    
+}
+p, strong, button{
+    color: white;
+    background: yellow;
+}

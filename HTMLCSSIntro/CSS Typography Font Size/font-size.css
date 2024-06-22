@@ -1,0 +1,25 @@
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+bold{
+    font-size: 2rem;
+}
+span{
+    font-size: 1.3rem;
+    color:green;
+}
+.second{
+    font-size:1.4rem;
+    color:red;
+    
+}
+.btn{
+    font-size: 1.5rem;
+    padding: 0.4rem;
+}
+input[type=text]{
+    font-size: 2rem;
+}

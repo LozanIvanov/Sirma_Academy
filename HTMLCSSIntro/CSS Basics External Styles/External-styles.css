@@ -1,0 +1,13 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div>p{
+    color:red;
+    font-weight: bold;
+}
+.first{
+    color: greenyellow;
+}
+span{
+    font-size: 2rem;
+}

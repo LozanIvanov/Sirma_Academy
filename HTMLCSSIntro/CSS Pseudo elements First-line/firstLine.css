@@ -1,0 +1,25 @@
+
+p::before {
+    content: "Start - ";
+    font-weight: bold;
+}
+
+p::after {
+    content: " - End";
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 2em;
+    color: blue;
+}
+
+p::first-line {
+    font-weight:normal;
+    color: red;
+}
+
+::selection {
+    background: yellow;
+    color: black;
+}

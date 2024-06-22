@@ -1,0 +1,18 @@
+h1,h2{
+    background: aquamarine;
+}
+div{
+    background: url("./Images/5.jpg");
+    height:634px;
+    color:white
+}
+.btn{
+    color: blue;
+    background: orange;
+    height: 2rem;
+    margin-left: 1.1rem;
+    border:unset;
+}
+.first{
+    background: red;
+}

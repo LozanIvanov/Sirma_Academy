@@ -1,0 +1,21 @@
+#title{
+   font-size: 1.3rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-bottom: 0.5rem;
+   color:red;
+}
+#first > p{
+    color:green
+}
+#second{
+    color:blue !important;
+    font-size: 1.3rem;
+
+}
+#last{
+    font-family: Times, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}

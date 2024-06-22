@@ -1,0 +1,18 @@
+h1,h2{
+    border:1px solid black;
+    text-align: center;
+}
+a{
+    border: 10px double green;
+}
+.first{
+    border:1px dotted red;
+}
+.second{
+    border:2px dashed blue;
+}
+.last{
+    border:1px solid green;
+    padding:15px;
+    border-radius: 20%;
+}
