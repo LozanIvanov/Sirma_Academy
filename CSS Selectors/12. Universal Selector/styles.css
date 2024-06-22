@@ -1,0 +1,12 @@
+*{
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color:red;
+    font-family: Impact,'Arial Narrow Bold', sans-serif;
+    padding: 20px;;
+}

@@ -1,0 +1,16 @@
+input[type="text"]{
+    color:red;
+    font-style: italic;
+
+}
+input[type="submit"]{
+    color:green;
+    font-weight: bold;
+    background: orange;
+}
+a[href="https://example.com"]{
+    color:red;
+}
+a[href="https://example.com"]:hover{
+    color:green;
+}

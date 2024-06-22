@@ -1,0 +1,12 @@
+div p{
+    color:orange;
+}
+div > p{
+    color:blue;
+}
+.parent p{
+    color:green;
+}
+.parent > p{
+    color:red;
+}

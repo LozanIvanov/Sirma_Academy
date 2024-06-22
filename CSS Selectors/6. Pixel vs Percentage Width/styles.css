@@ -1,0 +1,12 @@
+body{
+    background: blue;
+    padding: 0;
+}
+.percentage-width{
+    width:40%;
+    background: red;
+}
+.pixel-width{
+    width: 300px;
+    background: green;
+}

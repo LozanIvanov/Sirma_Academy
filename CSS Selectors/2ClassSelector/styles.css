@@ -1,0 +1,15 @@
+.highlight{
+    color:red;
+    background: yellow;
+}
+.common-style{
+    font-style: italic;
+    font-weight: bold;
+    color:blue;
+}
+.common-style::first-letter{
+    color:bisque;
+}
+.common-style:hover{
+    cursor:pointer;
+}
