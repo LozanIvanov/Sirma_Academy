@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Cell Content</title>
+</head>
+<body>
+    <table id="myTable" border="1">
+        <tr>
+          <td>Row1 cell1</td>
+          <td>Row1 cell2</td>
+        </tr>
+        <tr>
+          <td>Row2 cell1</td>
+          <td>Row2 cell2</td>
+        </tr>
+        <tr>
+          <td>Row3 cell1</td>
+          <td>Row3 cell2</td>
+        </tr>
+      </table>
+      <form>
+        <input type="button" onclick="changeContent()" value="Change content">
+      </form>
+    <script>
+         function changeContent() {
+      
+      var row = prompt("Enter row index (starting from 1):");
+      var column = prompt("Enter column index (starting from 1):");
+      var newContent = prompt("Enter new content:");
+
+      
+      var table = document.getElementById("myTable");
+
+      
+      if (row && column && !isNaN(row) && !isNaN(column)) {
+        
+        var rowIndex = parseInt(row) - 1;
+        var columnIndex = parseInt(column) - 1;
+        
+        //take content of cell
+        //var cellContent = table.rows[rowIndex].cells[columnIndex].innerHTML;
+        
+        //take lenght of column
+        //var cellContent = table.rows[0].cells.length;
+
+         //take lenght of rows
+         //var cellContent = table.rows.length;
+        
+        if (rowIndex >= 0 && rowIndex < table.rows.length) {
+          
+          if (columnIndex >= 0 && columnIndex < table.rows[rowIndex].cells.length) {
+        
+            table.rows[rowIndex].cells[columnIndex].innerHTML = newContent;
+          } else {
+            alert("Invalid column index!");
+          }
+        } else {
+          alert("Invalid row index!");
+        }
+      } else {
+        alert("Invalid row or column index!");
+      }
+     
+    }
+    </script>
+</body>
+</html>

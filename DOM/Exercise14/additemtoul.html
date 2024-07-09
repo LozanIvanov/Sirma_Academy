@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive List App</title>
+<style>
+  body { margin: 30px; font-family: Arial, sans-serif; }
+  ul { list-style-type: none; padding: 0; }
+  li { padding: 5px 0; cursor: pointer; list-style-type: disc;}
+  input[type="text"] { width: 200px; padding: 5px; margin-right: 10px; }
+  button { padding: 5px 10px; }
+</style>
+</head>
+<body>
+<div id="list-app">
+  <p>Click on the item to change the text, or click on the button to create a new item.</p>
+  <ul id="items"></ul>
+  <input type="text" id="newItemInput" placeholder="New item text">
+  <button type="button" id="createNewItemButton">Create New</button>
+</div>
+
+<script>
+  document.getElementById('createNewItemButton').addEventListener('click', function() {
+    var input = document.getElementById('newItemInput');
+    var newItemText = input.value.trim();
+    if (newItemText !== '') {
+      addItemToList(newItemText);
+      input.value = ''; 
+    }
+  });
+
+  function addItemToList(text) {
+    var ul = document.getElementById('items');
+    var li = document.createElement('li');
+    li.textContent = text;
+    //if you want to change li content
+   /* li.addEventListener('click', function() {
+      var newText = prompt('Edit item:', li.textContent);
+      if (newText !== null && newText.trim() !== '') {
+        li.textContent = newText.trim();
+      }
+    });*/
+    ul.appendChild(li);
+  }
+  
+  
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculate Sphere Volume</title>
+<style>
+  body { margin: 30px; font-family: Arial, sans-serif; }
+  .container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 6px solid grey; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  input[type="number"], button, div {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Sphere Volume Calculator</h2>
+  <form>
+    <label for="radius">Radius</label>
+    <input type="number" id="radius" placeholder="Radius" step="0.1" min="0">
+
+    <label for="result">Volume</label>
+    <input type="text" id="result" placeholder="0.000" readonly style="width:16rem; height: 2.4rem; margin-top:0;">
+
+    <button type="button" onclick="calculateVolume()" style="margin-top: 10px;">Calculate Volume</button>
+  </form>
+</div>
+
+<script>
+function calculateVolume() {
+  
+  var radius = document.getElementById('radius').value;
+  
+
+  if (radius === '' || radius <= 0) {
+    alert('Please enter a valid positive number for the radius.');
+    return;
+  }
+
+  
+  var volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
+
+
+  document.getElementById('result').value = volume.toFixed(3) + ' cubic units';
+}
+</script>
+</body>
+</html>
+

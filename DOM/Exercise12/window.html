@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Window Resize Event</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 30px; }
+  #dimensions { margin-top: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h2>Resize the window to see the dimensions change</h2>
+<div id="dimensions"></div>
+
+<script>
+  function displayWindowSize() {
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    var dimensionsDiv = document.getElementById('dimensions');
+    dimensionsDiv.textContent = `Width: ${width}px, Height: ${height}px`;
+  }
+
+  displayWindowSize();
+
+    window.addEventListener('resize', displayWindowSize);
+</script>
+
+</body>
+</html>

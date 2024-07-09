@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Highlight Bold Words on Hover</title>
+<style>
+  body { margin: 30px; font-family: Arial, sans-serif; }
+  .highlight { background-color: yellow; } 
+
+</style>
+</head>
+<body>
+<p>We have just started this section for the users (<b>beginner</b> to <b>intermediate</b>) who want to work with various <b>JavaScript</b> problems and write scripts online to test their <b>JavaScript</b> skill.</p>
+
+<a href="#" id="highlightLink">Hover over this link to highlight bold words</a>
+
+<script>
+  document.getElementById('highlightLink').addEventListener('mouseover', function() {
+    var bold = document.querySelectorAll('b'); 
+    bold.forEach(function(word) {
+      word.classList.add('highlight'); 
+    });
+  }); 
+
+ /* document.getElementById('highlightLink').addEventListener('mouseout', function() {
+    var boldWords = document.querySelectorAll('b'); 
+    boldWords.forEach(function(word) {
+      word.classList.remove('highlight');
+    });
+  });*/
+
+</script>
+</body>
+</html>
